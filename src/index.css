@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+span{
+    font-family: inherit;
+    font-weight: inherit;
+}
+.blueshadow{
+    box-shadow: 3px 3px 0 0 #60a5fa;
+}
+
+.blueshadow:hover{
+    transform: translate(-3px , -3px);
+    box-shadow: 6px 6px 0 0 #60a5fa;
+
+}
+
+
+/* Gradient Animation */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  /* Slide Animation for Texture */
+  @keyframes slide {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+  }
+  .animate-slide {
+    animation: slide 20s linear infinite;
+  }
+  
+  /* Fade In Down */
+  @keyframes fade-in-down {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-down {
+    animation: fade-in-down 1s ease-out;
+  }
+  
+  /* Pulse Text */
+  @keyframes pulse-text {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  .animate-pulse-text {
+    animation: pulse-text 2s infinite;
+  }
+  
+  /* Bounce Letter */
+  @keyframes bounce-letter {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .animate-bounce-letter {
+    display: inline-block;
+    animation: bounce-letter 1.5s infinite;
+  }
+  
+  /* Typewriter Effect */
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  .animate-typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 4s steps(60) 1s forwards;
+  }
+  
+  /* Glow Effect */
+  @keyframes glow {
+    0%, 100% { text-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+    50% { text-shadow: 0 0 20px rgba(59, 130, 246, 1); }
+  }
+  .animate-glow {
+    animation: glow 2s infinite;
+  }
+  
+  /* Bounce Button */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .animate-bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  /* Particle Animation */
+  @keyframes particle {
+    0% { transform: translate(0, 0); opacity: 1; }
+    100% { transform: translate(100px, -100px); opacity: 0; }
+  }
+  .animate-particle {
+    animation: particle 5s infinite;
+  }
+  .animate-particle-delayed {
+    animation: particle 5s infinite 1s;
+  }
